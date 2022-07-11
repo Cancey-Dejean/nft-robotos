@@ -46,7 +46,22 @@ const Nav = () => {
             <div className="logo-text">Robotos</div>
           </a>
 
-          <ul className="menu-list">
+          <ul className="menu-list desktop-nav">
+            {links.map(({ name, link, id }) => (
+              <li className="menu-list-item" key={id}>
+                <a href={link} className="menu-link">
+                  {name}
+                </a>
+              </li>
+            ))}
+            <li className="menu-list-item">
+              <a href="#" className="menu-link nav-cta">
+                Connect
+              </a>
+            </li>
+          </ul>
+
+          <ul className="menu-list mobile-nav">
             {links.map(({ name, link, id }) => (
               <li className="menu-list-item" key={id}>
                 <a href={link} className="menu-link" onClick={sayHello}>

@@ -111,12 +111,20 @@
 
 // Media Query screen
 @media (min-width: 769px) {
+    .mobile-nav {
+        display: none !important;
+    }
+
     .nav .hamburger {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
+    .desktop-nav {
+        display: none !important;
+    }
+
     .nav .menu {
         justify-content: space-between;
         background-color: var(--dark-grey);

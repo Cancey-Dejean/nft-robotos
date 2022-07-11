@@ -18,7 +18,7 @@ export default function Home() {
 
       <Hero />
       <GetRobots />
-      {/* <Intermission /> */}
+      <Intermission />
       <Rarity />
       <Faq />
     </div>
